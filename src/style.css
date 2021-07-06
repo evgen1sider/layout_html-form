@@ -7,13 +7,14 @@ body {
 }
 
 .form__fieldset {
-  margin: 20px;
+  margin: 10px 10px 20px;
+  padding: 4px;
 }
 
 .form__field {
-  margin-bottom: 8px;
+  margin: 8px;
 }
 
 .form__button {
-  margin: 10px 20px;
+  margin: 10px;
 }
