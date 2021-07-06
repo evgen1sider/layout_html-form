@@ -40,9 +40,9 @@
           <input
             type="number"
             name="age"
-            min="0"
-            max="200"
             id="age"
+            min="0"
+            max="100"
             value="12"
           >
         </div>
@@ -60,7 +60,6 @@
         <div class="form__field">
           <label class="form__label" for="agreement">I accept the term of the agreement</label>
           <input
-            class="form__input"
             type="checkbox"
             id="agreement"
             name="agreement"
@@ -99,14 +98,15 @@
           Do you love cats?
           <input
             type="radio"
+            name="love-cats"
             id="yes"
-            name="love-cats">
+          >
           <label class="form__label" for="yes">Yes</label>
           <input
-            class="form__input"
             type="radio"
+            name="love-cats"
             id="no"
-            name="love-cats">
+          >
           <label class="form__label" for="no">No</label>
         </div>
 
@@ -114,6 +114,7 @@
           <label class="form__label" for="color">What is your favorite color?</label>
           <input
             type="color"
+            name="color"
             id="color"
           >
         </div>
@@ -122,6 +123,7 @@
           <label class="form__label" for="time">What time do you go to bed?</label>
           <input
             type="time"
+            name="time"
             id="time"
           >
         </div>
@@ -129,9 +131,8 @@
         <div class="form__field">
           <label class="form__label" for="cars">What are your favorite brand of cars?</label>
           <select
-            class="form__input"
-            id="cars"
             name="cars"
+            id="cars"
             size="4"
             multiple
           >
@@ -146,8 +147,9 @@
           <label class="form__label" for="range">How do you rate our work?</label>
           <input
             type="range"
-            maxlength="10"
+            name="range"
             id="range"
+            maxlength="10"
           >
         </div>
       </fieldset>
@@ -155,14 +157,13 @@
       <fieldset class="form__fieldset">
         <legend>Additional info:</legend>
         <div class="form__field">
-          <label class="form__label" for="comments"></label>Comments</label>
+          <label class="form__label" for="comments">Comments</label>
           <textarea name="comments" id="comments"></textarea>
         </div>
 
         <div class="form__field">
           <label class="form__label" for="recommend">Would you recommend us?</label>
           <select
-            class="form__input"
             name="recommend"
             id="recommend"
           >
@@ -172,11 +173,12 @@
         </div>
       </fieldset>
 
-      <input
-        class="form__button"
+      <button
         type="submit"
-        value="Submit"
+        name="Submit"
       >
+        Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
